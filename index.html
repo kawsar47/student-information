@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Information</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+     
+
+</head>
+
+<body>
+
+        <div id="app">
+                <div class="student-description">
+                    <ul v-for="student in students">
+                        <li>Name:{{ student.name}}</li>
+                        <li>Class:{{ student.class}}</li>
+                        <li>section:{{ student.section}}</li>
+                        <li>Roll:{{ student.roll}}</li>
+                    
+        
+                    </ul>
+                </div>
+            </div>
+
+
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+    new Vue({
+        el:'#app',
+        data:{
+                students: [
+
+
+                        {
+                            name:'kawsar',
+                            class:    8,
+                            section:' A ',
+                            roll:'5',
+                            
+                        },
+                        {
+                            name:'jabir',
+                            class:    5,
+                            section:' A ',
+                            roll:'20',
+                            
+                            
+                        },
+                        {
+                            name:'hasan',
+                            class:    8,
+                            section:' c',
+                            roll:'10',
+                            
+                            
+                        },
+                        {
+                            name:'shahad',
+                            class:    3,
+                            section:' A ',
+                            roll:'5',
+                            
+                            
+                        },
+
+                    ]
+               
+
+            
+
+        }
+
+         
+
+    });
+    
+    </script>
+</body>
+
+</html>
